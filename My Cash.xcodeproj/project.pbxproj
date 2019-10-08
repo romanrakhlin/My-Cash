@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A11C4EB234CB29800D5F938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4EA234CB29800D5F938 /* AppDelegate.swift */; };
+		3A11C4ED234CB29800D5F938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4EC234CB29800D5F938 /* SceneDelegate.swift */; };
+		3A11C4EF234CB29800D5F938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4EE234CB29800D5F938 /* ViewController.swift */; };
+		3A11C4F2234CB29800D5F938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A11C4F0234CB29800D5F938 /* Main.storyboard */; };
+		3A11C4F5234CB29800D5F938 /* My_Cash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4F3234CB29800D5F938 /* My_Cash.xcdatamodeld */; };
+		3A11C4F7234CB29A00D5F938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A11C4F6234CB29A00D5F938 /* Assets.xcassets */; };
+		3A11C4FA234CB29A00D5F938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A11C4F8234CB29A00D5F938 /* LaunchScreen.storyboard */; };
+		3A11C505234CB29B00D5F938 /* My_CashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C504234CB29B00D5F938 /* My_CashTests.swift */; };
+		3A11C510234CB29B00D5F938 /* My_CashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C50F234CB29B00D5F938 /* My_CashUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A11C501234CB29B00D5F938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A11C4DF234CB29800D5F938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A11C4E6234CB29800D5F938;
+			remoteInfo = "My Cash";
+		};
+		3A11C50C234CB29B00D5F938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A11C4DF234CB29800D5F938 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A11C4E6234CB29800D5F938;
+			remoteInfo = "My Cash";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A11C4E7234CB29800D5F938 /* My Cash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Cash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A11C4EA234CB29800D5F938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A11C4EC234CB29800D5F938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A11C4EE234CB29800D5F938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A11C4F1234CB29800D5F938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A11C4F4234CB29800D5F938 /* My_Cash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Cash.xcdatamodel; sourceTree = "<group>"; };
+		3A11C4F6234CB29A00D5F938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A11C4F9234CB29A00D5F938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A11C4FB234CB29A00D5F938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A11C500234CB29B00D5F938 /* My CashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My CashTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A11C504234CB29B00D5F938 /* My_CashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_CashTests.swift; sourceTree = "<group>"; };
+		3A11C506234CB29B00D5F938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A11C50B234CB29B00D5F938 /* My CashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My CashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A11C50F234CB29B00D5F938 /* My_CashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_CashUITests.swift; sourceTree = "<group>"; };
+		3A11C511234CB29B00D5F938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A11C4E4234CB29800D5F938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A11C4FD234CB29B00D5F938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A11C508234CB29B00D5F938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A11C4DE234CB29800D5F938 = {
+			isa = PBXGroup;
+			children = (
+				3A11C4E9234CB29800D5F938 /* My Cash */,
+				3A11C503234CB29B00D5F938 /* My CashTests */,
+				3A11C50E234CB29B00D5F938 /* My CashUITests */,
+				3A11C4E8234CB29800D5F938 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A11C4E8234CB29800D5F938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A11C4E7234CB29800D5F938 /* My Cash.app */,
+				3A11C500234CB29B00D5F938 /* My CashTests.xctest */,
+				3A11C50B234CB29B00D5F938 /* My CashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A11C4E9234CB29800D5F938 /* My Cash */ = {
+			isa = PBXGroup;
+			children = (
+				3A11C4EA234CB29800D5F938 /* AppDelegate.swift */,
+				3A11C4EC234CB29800D5F938 /* SceneDelegate.swift */,
+				3A11C4EE234CB29800D5F938 /* ViewController.swift */,
+				3A11C4F0234CB29800D5F938 /* Main.storyboard */,
+				3A11C4F6234CB29A00D5F938 /* Assets.xcassets */,
+				3A11C4F8234CB29A00D5F938 /* LaunchScreen.storyboard */,
+				3A11C4FB234CB29A00D5F938 /* Info.plist */,
+				3A11C4F3234CB29800D5F938 /* My_Cash.xcdatamodeld */,
+			);
+			path = "My Cash";
+			sourceTree = "<group>";
+		};
+		3A11C503234CB29B00D5F938 /* My CashTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A11C504234CB29B00D5F938 /* My_CashTests.swift */,
+				3A11C506234CB29B00D5F938 /* Info.plist */,
+			);
+			path = "My CashTests";
+			sourceTree = "<group>";
+		};
+		3A11C50E234CB29B00D5F938 /* My CashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A11C50F234CB29B00D5F938 /* My_CashUITests.swift */,
+				3A11C511234CB29B00D5F938 /* Info.plist */,
+			);
+			path = "My CashUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A11C4E6234CB29800D5F938 /* My Cash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A11C514234CB29B00D5F938 /* Build configuration list for PBXNativeTarget "My Cash" */;
+			buildPhases = (
+				3A11C4E3234CB29800D5F938 /* Sources */,
+				3A11C4E4234CB29800D5F938 /* Frameworks */,
+				3A11C4E5234CB29800D5F938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Cash";
+			productName = "My Cash";
+			productReference = 3A11C4E7234CB29800D5F938 /* My Cash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A11C4FF234CB29B00D5F938 /* My CashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A11C517234CB29B00D5F938 /* Build configuration list for PBXNativeTarget "My CashTests" */;
+			buildPhases = (
+				3A11C4FC234CB29B00D5F938 /* Sources */,
+				3A11C4FD234CB29B00D5F938 /* Frameworks */,
+				3A11C4FE234CB29B00D5F938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A11C502234CB29B00D5F938 /* PBXTargetDependency */,
+			);
+			name = "My CashTests";
+			productName = "My CashTests";
+			productReference = 3A11C500234CB29B00D5F938 /* My CashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A11C50A234CB29B00D5F938 /* My CashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A11C51A234CB29B00D5F938 /* Build configuration list for PBXNativeTarget "My CashUITests" */;
+			buildPhases = (
+				3A11C507234CB29B00D5F938 /* Sources */,
+				3A11C508234CB29B00D5F938 /* Frameworks */,
+				3A11C509234CB29B00D5F938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A11C50D234CB29B00D5F938 /* PBXTargetDependency */,
+			);
+			name = "My CashUITests";
+			productName = "My CashUITests";
+			productReference = 3A11C50B234CB29B00D5F938 /* My CashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A11C4DF234CB29800D5F938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Roman Rakhlin";
+				TargetAttributes = {
+					3A11C4E6234CB29800D5F938 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					3A11C4FF234CB29B00D5F938 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 3A11C4E6234CB29800D5F938;
+					};
+					3A11C50A234CB29B00D5F938 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 3A11C4E6234CB29800D5F938;
+					};
+				};
+			};
+			buildConfigurationList = 3A11C4E2234CB29800D5F938 /* Build configuration list for PBXProject "My Cash" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A11C4DE234CB29800D5F938;
+			productRefGroup = 3A11C4E8234CB29800D5F938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A11C4E6234CB29800D5F938 /* My Cash */,
+				3A11C4FF234CB29B00D5F938 /* My CashTests */,
+				3A11C50A234CB29B00D5F938 /* My CashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A11C4E5234CB29800D5F938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A11C4FA234CB29A00D5F938 /* LaunchScreen.storyboard in Resources */,
+				3A11C4F7234CB29A00D5F938 /* Assets.xcassets in Resources */,
+				3A11C4F2234CB29800D5F938 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A11C4FE234CB29B00D5F938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A11C509234CB29B00D5F938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A11C4E3234CB29800D5F938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A11C4F5234CB29800D5F938 /* My_Cash.xcdatamodeld in Sources */,
+				3A11C4EF234CB29800D5F938 /* ViewController.swift in Sources */,
+				3A11C4EB234CB29800D5F938 /* AppDelegate.swift in Sources */,
+				3A11C4ED234CB29800D5F938 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A11C4FC234CB29B00D5F938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A11C505234CB29B00D5F938 /* My_CashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A11C507234CB29B00D5F938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A11C510234CB29B00D5F938 /* My_CashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A11C502234CB29B00D5F938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A11C4E6234CB29800D5F938 /* My Cash */;
+			targetProxy = 3A11C501234CB29B00D5F938 /* PBXContainerItemProxy */;
+		};
+		3A11C50D234CB29B00D5F938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A11C4E6234CB29800D5F938 /* My Cash */;
+			targetProxy = 3A11C50C234CB29B00D5F938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A11C4F0234CB29800D5F938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A11C4F1234CB29800D5F938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A11C4F8234CB29A00D5F938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A11C4F9234CB29A00D5F938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A11C512234CB29B00D5F938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A11C513234CB29B00D5F938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A11C515234CB29B00D5F938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3868R87QJX;
+				INFOPLIST_FILE = "My Cash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-Cash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A11C516234CB29B00D5F938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3868R87QJX;
+				INFOPLIST_FILE = "My Cash/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-Cash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A11C518234CB29B00D5F938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3868R87QJX;
+				INFOPLIST_FILE = "My CashTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-CashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Cash.app/My Cash";
+			};
+			name = Debug;
+		};
+		3A11C519234CB29B00D5F938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3868R87QJX;
+				INFOPLIST_FILE = "My CashTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-CashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/My Cash.app/My Cash";
+			};
+			name = Release;
+		};
+		3A11C51B234CB29B00D5F938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3868R87QJX;
+				INFOPLIST_FILE = "My CashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-CashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My Cash";
+			};
+			name = Debug;
+		};
+		3A11C51C234CB29B00D5F938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3868R87QJX;
+				INFOPLIST_FILE = "My CashUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-CashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My Cash";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A11C4E2234CB29800D5F938 /* Build configuration list for PBXProject "My Cash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A11C512234CB29B00D5F938 /* Debug */,
+				3A11C513234CB29B00D5F938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A11C514234CB29B00D5F938 /* Build configuration list for PBXNativeTarget "My Cash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A11C515234CB29B00D5F938 /* Debug */,
+				3A11C516234CB29B00D5F938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A11C517234CB29B00D5F938 /* Build configuration list for PBXNativeTarget "My CashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A11C518234CB29B00D5F938 /* Debug */,
+				3A11C519234CB29B00D5F938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A11C51A234CB29B00D5F938 /* Build configuration list for PBXNativeTarget "My CashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A11C51B234CB29B00D5F938 /* Debug */,
+				3A11C51C234CB29B00D5F938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A11C4F3234CB29800D5F938 /* My_Cash.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A11C4F4234CB29800D5F938 /* My_Cash.xcdatamodel */,
+			);
+			currentVersion = 3A11C4F4234CB29800D5F938 /* My_Cash.xcdatamodel */;
+			path = My_Cash.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A11C4DF234CB29800D5F938 /* Project object */;
+}
