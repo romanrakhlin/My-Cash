@@ -9,7 +9,12 @@
 import UIKit
 
 class Cell: UITableViewCell {
-
+    
+    
+    @IBOutlet var categoryLabel: UILabel!
+    @IBOutlet var noteLabel: UILabel!    
+    @IBOutlet var amountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		3A11C4EB234CB29800D5F938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4EA234CB29800D5F938 /* AppDelegate.swift */; };
 		3A11C4ED234CB29800D5F938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4EC234CB29800D5F938 /* SceneDelegate.swift */; };
-		3A11C4EF234CB29800D5F938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4EE234CB29800D5F938 /* ViewController.swift */; };
 		3A11C4F2234CB29800D5F938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A11C4F0234CB29800D5F938 /* Main.storyboard */; };
 		3A11C4F5234CB29800D5F938 /* My_Cash.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C4F3234CB29800D5F938 /* My_Cash.xcdatamodeld */; };
 		3A11C4F7234CB29A00D5F938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A11C4F6234CB29A00D5F938 /* Assets.xcassets */; };
 		3A11C4FA234CB29A00D5F938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A11C4F8234CB29A00D5F938 /* LaunchScreen.storyboard */; };
 		3A11C505234CB29B00D5F938 /* My_CashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C504234CB29B00D5F938 /* My_CashTests.swift */; };
 		3A11C510234CB29B00D5F938 /* My_CashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A11C50F234CB29B00D5F938 /* My_CashUITests.swift */; };
+		3A21A157234D0C2800518576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A156234D0C2800518576 /* ViewController.swift */; };
+		3A21A161234D0CC600518576 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A160234D0CC600518576 /* Cell.swift */; };
+		3A21A163234D0D0000518576 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A162234D0D0000518576 /* CategoryCell.swift */; };
+		3A21A165234D0D3000518576 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A164234D0D3000518576 /* TextFieldView.swift */; };
+		3A21A167234D271C00518576 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A166234D271C00518576 /* CategoriesController.swift */; };
+		3AD6089E234D2E9300295F28 /* NewTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD6089D234D2E9300295F28 /* NewTransactionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,6 @@
 		3A11C4E7234CB29800D5F938 /* My Cash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Cash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A11C4EA234CB29800D5F938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A11C4EC234CB29800D5F938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A11C4EE234CB29800D5F938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A11C4F1234CB29800D5F938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A11C4F4234CB29800D5F938 /* My_Cash.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Cash.xcdatamodel; sourceTree = "<group>"; };
 		3A11C4F6234CB29A00D5F938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		3A11C50B234CB29B00D5F938 /* My CashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My CashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A11C50F234CB29B00D5F938 /* My_CashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_CashUITests.swift; sourceTree = "<group>"; };
 		3A11C511234CB29B00D5F938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A21A156234D0C2800518576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A21A160234D0CC600518576 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		3A21A162234D0D0000518576 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		3A21A164234D0D3000518576 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		3A21A166234D271C00518576 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
+		3AD6089D234D2E9300295F28 /* NewTransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +113,8 @@
 			children = (
 				3A11C4EA234CB29800D5F938 /* AppDelegate.swift */,
 				3A11C4EC234CB29800D5F938 /* SceneDelegate.swift */,
-				3A11C4EE234CB29800D5F938 /* ViewController.swift */,
+				3A21A150234CC68B00518576 /* Controllers */,
+				3A21A155234D08DE00518576 /* View */,
 				3A11C4F0234CB29800D5F938 /* Main.storyboard */,
 				3A11C4F6234CB29A00D5F938 /* Assets.xcassets */,
 				3A11C4F8234CB29A00D5F938 /* LaunchScreen.storyboard */,
@@ -129,6 +140,26 @@
 				3A11C511234CB29B00D5F938 /* Info.plist */,
 			);
 			path = "My CashUITests";
+			sourceTree = "<group>";
+		};
+		3A21A150234CC68B00518576 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A21A156234D0C2800518576 /* ViewController.swift */,
+				3AD6089D234D2E9300295F28 /* NewTransactionController.swift */,
+				3A21A166234D271C00518576 /* CategoriesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3A21A155234D08DE00518576 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A21A160234D0CC600518576 /* Cell.swift */,
+				3A21A162234D0D0000518576 /* CategoryCell.swift */,
+				3A21A164234D0D3000518576 /* TextFieldView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A11C4F5234CB29800D5F938 /* My_Cash.xcdatamodeld in Sources */,
-				3A11C4EF234CB29800D5F938 /* ViewController.swift in Sources */,
+				3A21A161234D0CC600518576 /* Cell.swift in Sources */,
+				3A21A167234D271C00518576 /* CategoriesController.swift in Sources */,
+				3A21A163234D0D0000518576 /* CategoryCell.swift in Sources */,
 				3A11C4EB234CB29800D5F938 /* AppDelegate.swift in Sources */,
+				3A21A157234D0C2800518576 /* ViewController.swift in Sources */,
 				3A11C4ED234CB29800D5F938 /* SceneDelegate.swift in Sources */,
+				3AD6089E234D2E9300295F28 /* NewTransactionController.swift in Sources */,
+				3A21A165234D0D3000518576 /* TextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-Cash";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,7 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rrakhlin.My-Cash";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
