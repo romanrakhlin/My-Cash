@@ -47,7 +47,7 @@ class NewTransactionController: UIViewController, Category {
                 self.categoryTextField.text = self.category
                 self.noteTextField.text = self.note
             }
-            
+        
         }
         
         datePicker.isHidden = true

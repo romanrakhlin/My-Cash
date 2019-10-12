@@ -31,7 +31,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1126532331" green="0.59866571430000004" blue="0.34898066519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Cs9-XH-vtl" firstAttribute="leading" secondItem="ArG-8p-Ag6" secondAttribute="leading" id="HuW-KX-W97"/>
                                     <constraint firstItem="Cs9-XH-vtl" firstAttribute="top" secondItem="ArG-8p-Ag6" secondAttribute="top" constant="5" id="Iwe-8F-SjU"/>
@@ -45,6 +45,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="40" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fhq-Wu-In0">
                                 <rect key="frame" x="0.0" y="88" width="375" height="624"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="XD5-x7-pth" customClass="Cell" customModule="My_Cash" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="65"/>
@@ -72,6 +73,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="nS4-vj-Mt5" firstAttribute="leading" secondItem="sxl-fs-LOh" secondAttribute="leadingMargin" id="HL8-8L-N8I"/>
                                                 <constraint firstAttribute="bottom" secondItem="bk8-a6-Qip" secondAttribute="bottom" id="Ig9-PF-4mv"/>
@@ -82,6 +84,7 @@
                                                 <constraint firstItem="bk8-a6-Qip" firstAttribute="top" secondItem="sxl-fs-LOh" secondAttribute="top" id="mJn-Ep-fRU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="amountLabel" destination="bk8-a6-Qip" id="VKa-zn-HF4"/>
                                             <outlet property="categoryLabel" destination="nS4-vj-Mt5" id="3Wm-7t-rY1"/>
@@ -91,7 +94,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ArG-8p-Ag6" secondAttribute="bottom" id="4xo-Wj-mj1"/>
                             <constraint firstItem="ygq-je-fGI" firstAttribute="trailing" secondItem="ArG-8p-Ag6" secondAttribute="trailing" id="BVI-HR-8Rg"/>
@@ -113,6 +116,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="balanceLabel" destination="dmF-mg-zhs" id="W2e-AO-qLU"/>
+                        <outlet property="justView" destination="ArG-8p-Ag6" id="LR7-wP-NqU"/>
                         <outlet property="tableView" destination="fhq-Wu-In0" id="JGm-u7-dCs"/>
                     </connections>
                 </viewController>
@@ -188,7 +192,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xMq-t5-3Om">
-                                <rect key="frame" x="0.0" y="87" width="375" height="31"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QC4-zv-zMc"/>
                                 </constraints>
@@ -201,7 +205,7 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MOa-f0-RDq" firstAttribute="trailing" secondItem="E6L-MY-t3a" secondAttribute="trailing" constant="10" id="Azf-Ip-TSB"/>
                             <constraint firstItem="hIE-EG-ejL" firstAttribute="top" secondItem="Kfz-Hp-vSD" secondAttribute="bottom" constant="25" id="BZW-1S-0B1"/>
@@ -277,6 +281,7 @@
                                         <constraint firstAttribute="bottom" secondItem="eGR-jf-LZV" secondAttribute="bottom" id="wrB-4Y-Gjq"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="categoryLabel" destination="eGR-jf-LZV" id="Gex-rM-2i9"/>
                                 </connections>
@@ -301,7 +306,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eKc-nQ-LWy">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.013624590820000001" green="0.56725186110000003" blue="0.31760695579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="barTintColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

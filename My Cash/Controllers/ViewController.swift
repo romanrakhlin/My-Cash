@@ -11,6 +11,7 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, TransactionHandler {
     
+    @IBOutlet var justView: UIView!
     @IBOutlet var balanceLabel: UILabel!
     @IBOutlet var tableView: UITableView!
     
@@ -20,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let defaults = UserDefaults.standard
     var balance: Float = 0
     var index: IndexPath!
-    
+      
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -71,6 +72,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.amountLabel.textColor = UIColor.green
             cell.amountLabel.text = "+\(transaction.amount)"
         }
+        
+        cell.layer.cornerRadius = 20
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -208,7 +211,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } catch {
             print("Load data error: \(error)")
         }
-     
+        
         tableView.reloadData()
     }
 
