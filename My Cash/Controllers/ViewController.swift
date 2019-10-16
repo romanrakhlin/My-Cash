@@ -30,6 +30,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         balance = defaults.float(forKey: "Balance")
         balanceLabel.text = NSString(format: "%.2f", balance) as String
+        
+        tableView.layer.cornerRadius = 20
     }
     
     override func viewWillAppear(_ animated: Bool) {
