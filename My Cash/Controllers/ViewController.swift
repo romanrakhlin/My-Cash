@@ -32,6 +32,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         balanceLabel.text = NSString(format: "%.2f", balance) as String
         
         tableView.layer.cornerRadius = 20
+        
+        justView.layer.cornerRadius = 10
+        justView.layer.masksToBounds = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -97,7 +100,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         guard let transcation = self.fetchedResultController?.object(at: indexPath) else { fatalError("Error") }
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
-        let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { (action) in
+        let deleteAction = UIAlertAction(title: "Удалить", style: .destructive) { (action) in
             self.balanceCalculation(transaction: transcation)
             self.defaults.set(self.balance, forKey: "Balance")
             self.balanceLabel.text = NSString(format: "%.2f", self.balance) as String
@@ -105,13 +108,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.saveData()
         }
         
-        let editAction = UIAlertAction(title: "Edit", style: .default) { (action) in
+        let editAction = UIAlertAction(title: "Изменить", style: .default) { (action) in
             self.index = self.fetchedResultController.indexPath(forObject: transcation)
             self.balanceCalculation(transaction: transcation)
             self.performSegue(withIdentifier: "newTransaction", sender: self)
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+        let cancelAction = UIAlertAction(title: "Отменить", style: .cancel) { (action) in
             tableView.deselectRow(at: indexPath, animated: true)
         }
         
@@ -225,6 +228,7 @@ extension Transaction {
         get {
             let dateFromatter = DateFormatter()
             dateFromatter.dateFormat = "MMMM dd"
+            dateFromatter.locale = NSLocale(localeIdentifier: "ru_RU") as Locale
             
             return dateFromatter.string(from: date!)
         }

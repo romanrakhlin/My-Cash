@@ -12,14 +12,15 @@ protocol TransactionHandler {
     func newTransaction(amout: Float, category: String, note: String, date: Date, spend: Bool, newTranscation: Bool)
 }
 
-class NewTransactionController: UIViewController, Category {
+class NewTransactionController: UIViewController, Category, UITextFieldDelegate {
    
-    @IBOutlet var amountTextField: TextFieldVIew!
-    @IBOutlet var categoryTextField: TextFieldVIew!
-    @IBOutlet var noteTextField: TextFieldVIew!
-    @IBOutlet var dateTextField: TextFieldVIew!
+    @IBOutlet var amountTextField: TextFieldVIew! = nil
+    @IBOutlet var categoryTextField: TextFieldVIew! = nil
+    @IBOutlet var noteTextField: TextFieldVIew! = nil
+    @IBOutlet var dateTextField: TextFieldVIew! = nil
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var segmentControl: UISegmentedControl!
+    @IBOutlet var justView: UIView!
     
     var moneySpend: Bool = true
     var newTransaction: Bool = true
@@ -40,7 +41,9 @@ class NewTransactionController: UIViewController, Category {
             
             if moneySpend == true {
                 segmentControl.selectedSegmentIndex = 0
-            } else { segmentControl.selectedSegmentIndex = 1}
+            } else {
+                segmentControl.selectedSegmentIndex = 1
+            }
             
             DispatchQueue.main.async {
                 self.amountTextField.text = "\(self.amount)"
@@ -57,21 +60,36 @@ class NewTransactionController: UIViewController, Category {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDatePicker))
         dateTextField.addGestureRecognizer(tapGesture)
         
+        amountTextField.delegate = self
+        categoryTextField.delegate = self
+        noteTextField.delegate = self
+        
+        amountTextField.addDoneButtonToKeyboard(myAction:  #selector(self.amountTextField.resignFirstResponder))
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        amountTextField.resignFirstResponder()
+        categoryTextField.resignFirstResponder()
+        noteTextField.resignFirstResponder()
+        return true;
     }
     
     @IBAction func segmentedSwitcher(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             moneySpend = true
+            self.justView.backgroundColor = UIColor.red
         } else {
             moneySpend = false
+            self.justView.backgroundColor = UIColor.green
         }
     }
     
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         let floatNumber = (amountTextField.text! as NSString).floatValue
         if floatNumber == 0 {
-            let alert = UIAlertController(title: "Transaction details", message: "Enter transaction amount", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default)
+            let alert = UIAlertController(title: "Ошибка", message: "укажите сумму", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Хорошо", style: .default)
             
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
@@ -111,4 +129,24 @@ class NewTransactionController: UIViewController, Category {
         }
     }
     
+}
+
+extension UITextField{
+
+ func addDoneButtonToKeyboard(myAction:Selector?){
+    let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 300, height: 40))
+    doneToolbar.barStyle = UIBarStyle.default
+
+    let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+    let done: UIBarButtonItem = UIBarButtonItem(title: "Готово", style: UIBarButtonItem.Style.done, target: self, action: myAction)
+
+    var items = [UIBarButtonItem]()
+    items.append(flexSpace)
+    items.append(done)
+
+    doneToolbar.items = items
+    doneToolbar.sizeToFit()
+
+    self.inputAccessoryView = doneToolbar
+ }
 }
