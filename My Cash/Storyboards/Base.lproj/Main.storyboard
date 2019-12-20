@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sAG-lP-Sux">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sAG-lP-Sux">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,7 +69,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArG-8p-Ag6">
                                 <rect key="frame" x="0.0" y="699.33333333333337" width="375" height="112.66666666666663"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баланс:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-XH-vtl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-XH-vtl">
                                         <rect key="frame" x="28" y="15" width="319" height="30"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
                                         <nil key="highlightedColor"/>
@@ -106,12 +106,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="My Cash" id="GCN-Ep-sFU">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="S4D-Vc-xc5"/>
-                        <barButtonItem key="leftBarButtonItem" title="статистика" image="clock" catalog="system" id="uAV-xR-2rw">
-                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <segue destination="J4L-I9-hfX" kind="show" id="7Tk-aC-wMe"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YKj-x4-h1V">
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -129,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="1333.5999999999999" y="103.44827586206897"/>
         </scene>
-        <!--Создать-->
+        <!--Create New-->
         <scene sceneID="4BD-wn-2ql">
             <objects>
                 <viewController id="RAB-fh-mvt" customClass="NewTransactionController" customModule="My_Cash" customModuleProvider="target" sceneMemberID="viewController">
@@ -144,7 +138,7 @@
                                     <constraint firstAttribute="width" constant="375" id="Mzo-ij-WIB"/>
                                     <constraint firstAttribute="height" constant="216" id="rZY-ZH-CYn"/>
                                 </constraints>
-                                <locale key="locale" localeIdentifier="ru"/>
+                                <locale key="locale" localeIdentifier="en"/>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E6L-MY-t3a" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
                                 <rect key="frame" x="14" y="223" width="314" height="34"/>
@@ -212,8 +206,8 @@
                                     <constraint firstAttribute="height" constant="30" id="9Fi-6r-grg"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Расход"/>
-                                    <segment title="Зачисление"/>
+                                    <segment title="expenses"/>
+                                    <segment title="incomes"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentedSwitcher:" destination="RAB-fh-mvt" eventType="valueChanged" id="zwE-4e-9CB"/>
@@ -229,7 +223,7 @@
                                     <segue destination="kQ1-fe-oB5" kind="show" identifier="showCategories" id="7j1-0t-q8N"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScL-ki-PPD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScL-ki-PPD">
                                 <rect key="frame" x="30" y="196" width="281" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="281" id="3kg-ri-YBM"/>
@@ -240,7 +234,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Категория:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-af-Coz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-af-Coz">
                                 <rect key="frame" x="30" y="277" width="287" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PaD-af-Coz" secondAttribute="height" multiplier="287:23" id="2Qf-Ns-eb7"/>
@@ -251,7 +245,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-zI-nFm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-zI-nFm">
                                 <rect key="frame" x="30" y="358" width="284" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="284" id="HLT-hv-7D8"/>
@@ -262,7 +256,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-Ee-QQz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-Ee-QQz">
                                 <rect key="frame" x="30" y="439" width="284" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="Eio-Jm-fSJ"/>
@@ -274,7 +268,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MOa-f0-RDq" firstAttribute="trailing" secondItem="YpT-g7-7i8" secondAttribute="trailing" constant="13.33" id="0IK-Eh-Vvm"/>
                             <constraint firstItem="PaD-af-Coz" firstAttribute="top" secondItem="E6L-MY-t3a" secondAttribute="bottom" constant="20" id="8XB-e5-G1A"/>
@@ -304,9 +298,9 @@
                         <viewLayoutGuide key="safeArea" id="MOa-f0-RDq"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Создать" id="XS0-DW-vfI">
+                    <navigationItem key="navigationItem" title="Create New" id="XS0-DW-vfI">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="Kyx-FX-u4f"/>
-                        <barButtonItem key="rightBarButtonItem" tag="1" title="Готово" id="1Ka-af-EX2">
+                        <barButtonItem key="rightBarButtonItem" tag="1" title="Done" id="1Ka-af-EX2">
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="doneButtonPressed:" destination="RAB-fh-mvt" id="cIm-5d-Myw"/>
@@ -328,7 +322,7 @@
             </objects>
             <point key="canvasLocation" x="2216.8000000000002" y="102.70935960591133"/>
         </scene>
-        <!--Категории-->
+        <!--Category-->
         <scene sceneID="QW2-Jt-LOJ">
             <objects>
                 <tableViewController id="kQ1-fe-oB5" customClass="CategoriesController" customModule="My_Cash" customModuleProvider="target" sceneMemberID="viewController">
@@ -369,7 +363,7 @@
                             <outlet property="delegate" destination="kQ1-fe-oB5" id="Ztf-0F-9WZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Категории" id="wJD-ze-6ZE"/>
+                    <navigationItem key="navigationItem" title="Category" id="wJD-ze-6ZE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKP-5q-WV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,8 +378,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="eKc-nQ-LWy">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -396,7 +389,7 @@
             </objects>
             <point key="canvasLocation" x="424.63768115942031" y="103.79464285714285"/>
         </scene>
-        <!--Статистика-->
+        <!--Statistics-->
         <scene sceneID="Myg-UG-Tlw">
             <objects>
                 <viewController id="J4L-I9-hfX" customClass="GraphViewController" customModule="My_Cash" customModuleProvider="target" sceneMemberID="viewController">
@@ -457,7 +450,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syj-ce-3I0">
-                                <rect key="frame" x="77.666666666666686" y="190" width="220" height="220"/>
+                                <rect key="frame" x="77.666666666666686" y="94" width="220" height="220"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dq3-3m-Ild" customClass="ProgressChartCircleView" customModule="My_Cash" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="200" height="200"/>
@@ -481,8 +474,8 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-Uy-Vll">
                                 <rect key="frame" x="0.0" y="517" width="375" height="32"/>
                                 <segments>
-                                    <segment title="Расходы"/>
-                                    <segment title="Зачисления"/>
+                                    <segment title="expenses"/>
+                                    <segment title="incomes"/>
                                 </segments>
                             </segmentedControl>
                         </subviews>
@@ -501,7 +494,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U3K-VS-t8u"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Статистика" id="JJ7-h6-vrP"/>
+                    <navigationItem key="navigationItem" title="Statistics" id="JJ7-h6-vrP"/>
                     <connections>
                         <outlet property="animatedCircle" destination="Dq3-3m-Ild" id="71G-3H-oic"/>
                         <outlet property="animatedView" destination="syj-ce-3I0" id="dTH-2a-bK7"/>
@@ -514,7 +507,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="clock" catalog="system" width="64" height="60"/>
         <image name="square.grid.2x2" catalog="system" width="64" height="56"/>
     </resources>
 </document>

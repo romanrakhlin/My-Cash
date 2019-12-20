@@ -17,8 +17,8 @@ class CategoriesController: UITableViewController {
     var spend = Bool()
     var delegate: Category?
     
-    let expenseCategories: [String] = ["Покупки", "Еда", "Счета", "Машина", "Другое"]
-    let incomeCategories: [String] = ["Подарок", "Зарплата", "Продажа", "Бизнес", "Дивиденты", "Другое"]
+    let expenseCategories: [String] = ["Shopping", "Food", "Payments", "Car", "Other"]
+    let incomeCategories: [String] = ["Gift", "Salary", "Sale", "Business", "Dividends", "Other"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,7 +17,6 @@
 		3A21A157234D0C2800518576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A156234D0C2800518576 /* ViewController.swift */; };
 		3A21A161234D0CC600518576 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A160234D0CC600518576 /* Cell.swift */; };
 		3A21A163234D0D0000518576 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A162234D0D0000518576 /* CategoryCell.swift */; };
-		3A21A165234D0D3000518576 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A164234D0D3000518576 /* TextFieldView.swift */; };
 		3A21A167234D271C00518576 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A21A166234D271C00518576 /* CategoriesController.swift */; };
 		3A2C039423A9195C0051BBE3 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C039323A9195C0051BBE3 /* GraphViewController.swift */; };
 		3A2C039D23A934600051BBE3 /* ProgressChartCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C039C23A934600051BBE3 /* ProgressChartCircleView.swift */; };
@@ -62,7 +61,6 @@
 		3A21A156234D0C2800518576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A21A160234D0CC600518576 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		3A21A162234D0D0000518576 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
-		3A21A164234D0D3000518576 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		3A21A166234D271C00518576 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
 		3A2C039323A9195C0051BBE3 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		3A2C039C23A934600051BBE3 /* ProgressChartCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressChartCircleView.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 			children = (
 				3A21A160234D0CC600518576 /* Cell.swift */,
 				3A21A162234D0D0000518576 /* CategoryCell.swift */,
-				3A21A164234D0D3000518576 /* TextFieldView.swift */,
 				3A2C039C23A934600051BBE3 /* ProgressChartCircleView.swift */,
 				3A2C039E23A934750051BBE3 /* ProgressCircleChartModel.swift */,
 				3A2C03A023A934890051BBE3 /* CountingLabel.swift */,
@@ -337,7 +334,6 @@
 				3A2C039D23A934600051BBE3 /* ProgressChartCircleView.swift in Sources */,
 				3A11C4ED234CB29800D5F938 /* SceneDelegate.swift in Sources */,
 				3AD6089E234D2E9300295F28 /* NewTransactionController.swift in Sources */,
-				3A21A165234D0D3000518576 /* TextFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

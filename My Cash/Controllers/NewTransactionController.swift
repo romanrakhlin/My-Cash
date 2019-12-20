@@ -14,10 +14,10 @@ protocol TransactionHandler {
 
 class NewTransactionController: UIViewController, Category, UITextFieldDelegate {
    
-    @IBOutlet var amountTextField: TextFieldVIew! = nil
-    @IBOutlet var categoryTextField: TextFieldVIew! = nil
-    @IBOutlet var noteTextField: TextFieldVIew! = nil
-    @IBOutlet var dateTextField: TextFieldVIew! = nil
+    @IBOutlet var amountTextField: UITextField! = nil
+    @IBOutlet var categoryTextField: UITextField! = nil
+    @IBOutlet var noteTextField: UITextField! = nil
+    @IBOutlet var dateTextField: UITextField! = nil
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var segmentControl: UISegmentedControl!
     @IBOutlet var justView: UIView!
@@ -50,7 +50,6 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
                 self.categoryTextField.text = self.category
                 self.noteTextField.text = self.note
             }
-        
         }
         
         datePicker.isHidden = true
@@ -78,18 +77,18 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
     @IBAction func segmentedSwitcher(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             moneySpend = true
-            self.justView.backgroundColor = UIColor.red
+//            self.justView.backgroundColor = UIColor.red
         } else {
             moneySpend = false
-            self.justView.backgroundColor = UIColor.green
+//            self.justView.backgroundColor = UIColor.green
         }
     }
     
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         let floatNumber = (amountTextField.text! as NSString).floatValue
         if floatNumber == 0 {
-            let alert = UIAlertController(title: "Ошибка", message: "укажите сумму", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Хорошо", style: .default)
+            let alert = UIAlertController(title: "Error", message: "enter amount", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default)
             
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
