@@ -299,7 +299,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Create New" id="XS0-DW-vfI">
-                        <barButtonItem key="backBarButtonItem" title="Назад" id="Kyx-FX-u4f"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Kyx-FX-u4f"/>
                         <barButtonItem key="rightBarButtonItem" tag="1" title="Done" id="1Ka-af-EX2">
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
