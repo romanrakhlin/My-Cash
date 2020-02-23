@@ -128,7 +128,6 @@ extension ProgressChartCircleView {
                 strokeAnimation.duration = duration
                 strokeAnimation.fillMode = CAMediaTimingFillMode.forwards
                 strokeAnimation.isRemovedOnCompletion = false
-                //contourLayer.lineCap = kCALineCapRound
                 contourLayer.add(strokeAnimation, forKey: "strokeAnimation")
                 
                 var animationTypeLabel: CountingLabel.CounterAnimationType!
@@ -163,13 +162,7 @@ extension ProgressChartCircleView {
                 if i == index {
                     _label.text = "\(Int(_models[i].endPercentage - _models[i].startPercentage))%"
                 }
-                
             }
         }
     }
-    
-    func animateChartElement(atIndex index: Int) {
-        // TODO:
-    }
 }
-

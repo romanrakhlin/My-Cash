@@ -17,15 +17,14 @@ class CategoriesController: UITableViewController {
     var spend = Bool()
     var delegate: Category?
     
-    let expenseCategories: [String] = ["Shopping", "Food", "Payments", "Car", "Other"]
-    let incomeCategories: [String] = ["Gift", "Salary", "Sale", "Business", "Dividends", "Other"]
+    let expenseCategories: [String] = ["Шопинг", "Еда", "Платежи", "Автомобиль", "Другое"]
+    let incomeCategories: [String] = ["Подарок", "Зарплата", "Продажа", "Бизнес", "Дивиденты", "Другое"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     // MARK: - Table view data source
-
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -52,5 +51,4 @@ class CategoriesController: UITableViewController {
         delegate?.selectedCategory(category: selectedCell.categoryLabel.text!)
         navigationController?.popViewController(animated: true)
     }
-
 }

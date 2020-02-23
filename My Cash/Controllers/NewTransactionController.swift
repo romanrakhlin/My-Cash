@@ -52,7 +52,7 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
             }
         }
         
-        datePicker.isHidden = true
+//        datePicker.isHidden = true
         updateDate()
         
         datePicker.addTarget(self, action: #selector(updateDate), for: .valueChanged)
@@ -77,18 +77,16 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
     @IBAction func segmentedSwitcher(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
             moneySpend = true
-//            self.justView.backgroundColor = UIColor.red
         } else {
             moneySpend = false
-//            self.justView.backgroundColor = UIColor.green
         }
     }
     
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         let floatNumber = (amountTextField.text! as NSString).floatValue
         if floatNumber == 0 {
-            let alert = UIAlertController(title: "Error", message: "enter amount", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default)
+            let alert = UIAlertController(title: "Ошибка", message: "укажите сумму", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Хорошо", style: .default)
             
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
@@ -96,7 +94,6 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
             delegate?.newTransaction(amout: floatNumber, category: categoryTextField.text!, note: noteTextField.text!, date: datePicker.date, spend: moneySpend, newTranscation: newTransaction)
             navigationController?.popToRootViewController(animated: true)
         }
-
     }
     
     @objc func updateDate() {
@@ -107,9 +104,7 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
     }
     
     @objc func showDatePicker() {
-        datePicker.isHidden = false
-        //dateTextField.isEnabled = false
-        
+//        datePicker.isHidden = false
         amountTextField.endEditing(true)
         categoryTextField.endEditing(true)
         noteTextField.endEditing(true)
@@ -127,7 +122,6 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
             destinationVC.delegate = self
         }
     }
-    
 }
 
 extension UITextField{

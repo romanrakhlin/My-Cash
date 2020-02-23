@@ -23,27 +23,26 @@ class GraphViewController: UIViewController {
     let tinnyLightGrey = UIColor.lightGray.withAlphaComponent(0.7)
     
     var firstModels = [
-        ProgressCircleChartModel(description: "Покупки", startPercentage: 0, endPercentage: 55, color: .green),
-        ProgressCircleChartModel(description: "Еда", startPercentage: 55, endPercentage: 59, color: .red),
-        ProgressCircleChartModel(description: "Счета", startPercentage: 59, endPercentage: 81, color: .black),
-        ProgressCircleChartModel(description: "Машина", startPercentage: 81, endPercentage: 93, color: .red),
-        ProgressCircleChartModel(description: "Другое", startPercentage: 93, endPercentage: 97, color: .orange)
+        ProgressCircleChartModel(description: "Shopping", startPercentage: 0, endPercentage: 55, color: .green),
+        ProgressCircleChartModel(description: "Food", startPercentage: 55, endPercentage: 59, color: .red),
+        ProgressCircleChartModel(description: "Payments", startPercentage: 59, endPercentage: 81, color: .black),
+        ProgressCircleChartModel(description: "Car", startPercentage: 81, endPercentage: 93, color: .red),
+        ProgressCircleChartModel(description: "Other", startPercentage: 93, endPercentage: 97, color: .orange)
     ]
     
     var secondModels = [
-        ProgressCircleChartModel(description: "Подарок", startPercentage: 0, endPercentage: 55, color: .green),
-        ProgressCircleChartModel(description: "Зарплата", startPercentage: 55, endPercentage: 59, color: .red),
-        ProgressCircleChartModel(description: "Продажа", startPercentage: 59, endPercentage: 81, color: .black),
-        ProgressCircleChartModel(description: "Бизнес", startPercentage: 81, endPercentage: 93, color: .red),
-        ProgressCircleChartModel(description: "Дивиденты", startPercentage: 93, endPercentage: 97, color: .orange),
-        ProgressCircleChartModel(description: "Другое", startPercentage: 91, endPercentage: 91, color: .orange)
+        ProgressCircleChartModel(description: "Gift", startPercentage: 0, endPercentage: 55, color: .green),
+        ProgressCircleChartModel(description: "Salary", startPercentage: 55, endPercentage: 59, color: .red),
+        ProgressCircleChartModel(description: "Sale", startPercentage: 59, endPercentage: 81, color: .black),
+        ProgressCircleChartModel(description: "Businessс", startPercentage: 81, endPercentage: 93, color: .red),
+        ProgressCircleChartModel(description: "Dividends", startPercentage: 93, endPercentage: 97, color: .orange),
+        ProgressCircleChartModel(description: "Other", startPercentage: 91, endPercentage: 91, color: .orange)
     ]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        animatedView.backgroundColor = .white
         animatedView.isHidden = false
         
         tableView.delegate = self
@@ -60,7 +59,6 @@ class GraphViewController: UIViewController {
         tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableView.ScrollPosition.top)
         
         animatedCircle.animateChartElement(atIndex: 0, animated: false, duration: nil, animationType: nil, counterType: nil)
-        
     }
 }
 
@@ -85,7 +83,4 @@ extension GraphViewController: UITableViewDelegate, UITableViewDataSource {
         
         animatedCircle.animateChartElement(atIndex: indexPath.row, animated: true, duration: 0.8, animationType: .easeIn, counterType: .int)
     }
-    
-    
 }
-

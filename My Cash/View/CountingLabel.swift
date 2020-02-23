@@ -45,7 +45,6 @@ class CountingLabel: UILabel {
     
     var endingText: String?
     
-    
     func count(fromValue: Float, to toValue: Float, withDuration duration: TimeInterval, animationType animation: CounterAnimationType, counterType: CounterType, withText text: String? = nil) {
         self.startNumber = fromValue
         self.endNumber = toValue
@@ -77,7 +76,6 @@ class CountingLabel: UILabel {
         }
         
         updateText(value: currentCounterValue)
-        
     }
     
     func invalidateTimer() {
@@ -108,7 +106,5 @@ class CountingLabel: UILabel {
         default:
             return 0.0
         }
-        
-        
     }
 }
