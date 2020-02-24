@@ -34,7 +34,6 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         if newTransaction == false {
             datePicker.date = date
             updateDate()
@@ -52,7 +51,7 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
             }
         }
         
-//        datePicker.isHidden = true
+        datePicker.isHidden = true
         updateDate()
         
         datePicker.addTarget(self, action: #selector(updateDate), for: .valueChanged)
@@ -85,8 +84,8 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
         let floatNumber = (amountTextField.text! as NSString).floatValue
         if floatNumber == 0 {
-            let alert = UIAlertController(title: "Ошибка", message: "укажите сумму", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Хорошо", style: .default)
+            let alert = UIAlertController(title: "Error", message: "enter amount", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default)
             
             alert.addAction(action)
             present(alert, animated: true, completion: nil)
@@ -104,7 +103,7 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
     }
     
     @objc func showDatePicker() {
-//        datePicker.isHidden = false
+        datePicker.isHidden = false
         amountTextField.endEditing(true)
         categoryTextField.endEditing(true)
         noteTextField.endEditing(true)
@@ -125,21 +124,21 @@ class NewTransactionController: UIViewController, Category, UITextFieldDelegate 
 }
 
 extension UITextField{
-
- func addDoneButtonToKeyboard(myAction:Selector?){
-    let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 300, height: 40))
-    doneToolbar.barStyle = UIBarStyle.default
-
-    let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-    let done: UIBarButtonItem = UIBarButtonItem(title: "Готово", style: UIBarButtonItem.Style.done, target: self, action: myAction)
-
-    var items = [UIBarButtonItem]()
-    items.append(flexSpace)
-    items.append(done)
-
-    doneToolbar.items = items
-    doneToolbar.sizeToFit()
-
-    self.inputAccessoryView = doneToolbar
- }
+    func addDoneButtonToKeyboard(myAction:Selector?){
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 300, height: 40))
+        doneToolbar.barStyle = UIBarStyle.default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: myAction)
+        
+        var items = [UIBarButtonItem]()
+        items.append(flexSpace)
+        items.append(done)
+        
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        self.inputAccessoryView = doneToolbar
+    }
 }

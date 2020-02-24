@@ -18,7 +18,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArG-8p-Ag6">
                                 <rect key="frame" x="0.0" y="771.5" width="414" height="124.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баланс:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-XH-vtl">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs9-XH-vtl">
                                         <rect key="frame" x="28" y="15" width="358" height="30"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
                                         <nil key="highlightedColor"/>
@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="1333.3333333333335" y="103.125"/>
         </scene>
-        <!--Создать-->
+        <!--Create-->
         <scene sceneID="4BD-wn-2ql">
             <objects>
                 <viewController id="RAB-fh-mvt" customClass="NewTransactionController" customModule="My_Cash" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,8 +137,8 @@
                                     <constraint firstAttribute="height" constant="30" id="9Fi-6r-grg"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="затрата"/>
-                                    <segment title="получение"/>
+                                    <segment title="expense"/>
+                                    <segment title="income"/>
                                 </segments>
                                 <connections>
                                     <action selector="segmentedSwitcher:" destination="RAB-fh-mvt" eventType="valueChanged" id="zwE-4e-9CB"/>
@@ -150,13 +150,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GaS-6y-LhZ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="72"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScL-ki-PPD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScL-ki-PPD">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="количество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E6L-MY-t3a" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E6L-MY-t3a" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="38" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
@@ -171,7 +171,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xNk-GZ-435">
                                         <rect key="frame" x="0.0" y="92" width="374" height="72"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Категория:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-af-Coz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-af-Coz">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -180,7 +180,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BKX-HY-bv6">
                                                 <rect key="frame" x="0.0" y="38" width="374" height="34"/>
                                                 <subviews>
-                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="категория" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kfz-Hp-vSD" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
+                                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="category" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kfz-Hp-vSD" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="341" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="done"/>
@@ -203,13 +203,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="1oL-d7-e2h">
                                         <rect key="frame" x="0.0" y="184" width="374" height="72"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-zI-nFm">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-zI-nFm">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="описание" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIE-EG-ejL" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIE-EG-ejL" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="38" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="done"/>
@@ -224,13 +224,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BVR-gf-7if">
                                         <rect key="frame" x="0.0" y="276" width="374" height="72"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-Ee-QQz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaq-Ee-QQz">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="дата" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUx-J2-1cJ" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUx-J2-1cJ" customClass="TextFieldVIew" customModule="My_Cash" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="38" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
@@ -244,23 +244,29 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="ieK-vf-Et1">
+                                <rect key="frame" x="0.0" y="660" width="414" height="216"/>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cK1-dC-so8" firstAttribute="centerX" secondItem="MOa-f0-RDq" secondAttribute="centerX" id="5pg-RF-y5S"/>
+                            <constraint firstItem="MOa-f0-RDq" firstAttribute="trailing" secondItem="ieK-vf-Et1" secondAttribute="trailing" id="HB3-Kz-Lmp"/>
                             <constraint firstItem="xMq-t5-3Om" firstAttribute="top" secondItem="MOa-f0-RDq" secondAttribute="top" id="VOQ-T4-0tq"/>
                             <constraint firstItem="MOa-f0-RDq" firstAttribute="trailing" secondItem="cK1-dC-so8" secondAttribute="trailing" constant="20" id="XHL-tE-3fA"/>
                             <constraint firstItem="xMq-t5-3Om" firstAttribute="leading" secondItem="MOa-f0-RDq" secondAttribute="leading" id="Xoa-yO-3wd"/>
                             <constraint firstItem="cK1-dC-so8" firstAttribute="leading" secondItem="MOa-f0-RDq" secondAttribute="leading" constant="20" id="asz-1i-Lj3"/>
                             <constraint firstItem="xMq-t5-3Om" firstAttribute="centerX" secondItem="cK1-dC-so8" secondAttribute="centerX" id="bGs-8l-8bS"/>
+                            <constraint firstItem="ieK-vf-Et1" firstAttribute="leading" secondItem="XTF-AW-HUZ" secondAttribute="leading" id="eRM-xy-CZH"/>
                             <constraint firstItem="cK1-dC-so8" firstAttribute="centerY" secondItem="MOa-f0-RDq" secondAttribute="centerY" id="jsZ-k1-TlK"/>
+                            <constraint firstAttribute="bottom" secondItem="ieK-vf-Et1" secondAttribute="bottom" constant="20" symbolic="YES" id="sVl-4D-DKo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MOa-f0-RDq"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Создать" id="XS0-DW-vfI">
-                        <barButtonItem key="backBarButtonItem" title="Назад" id="Kyx-FX-u4f"/>
-                        <barButtonItem key="rightBarButtonItem" tag="1" title="Готово" id="1Ka-af-EX2">
+                    <navigationItem key="navigationItem" title="Create" id="XS0-DW-vfI">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Kyx-FX-u4f"/>
+                        <barButtonItem key="rightBarButtonItem" tag="1" style="done" systemItem="done" id="1Ka-af-EX2">
                             <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="doneButtonPressed:" destination="RAB-fh-mvt" id="cIm-5d-Myw"/>
@@ -271,6 +277,7 @@
                     <connections>
                         <outlet property="amountTextField" destination="E6L-MY-t3a" id="n7p-M8-Zmd"/>
                         <outlet property="categoryTextField" destination="Kfz-Hp-vSD" id="fgi-Lc-Aqy"/>
+                        <outlet property="datePicker" destination="ieK-vf-Et1" id="8KW-xi-Iwm"/>
                         <outlet property="dateTextField" destination="YUx-J2-1cJ" id="kOv-NH-BG5"/>
                         <outlet property="justView" destination="XTF-AW-HUZ" id="fBA-EV-LsG"/>
                         <outlet property="noteTextField" destination="hIE-EG-ejL" id="SnR-uq-J52"/>
@@ -281,7 +288,7 @@
             </objects>
             <point key="canvasLocation" x="2216.8000000000002" y="102.70935960591133"/>
         </scene>
-        <!--Категория-->
+        <!--Category-->
         <scene sceneID="QW2-Jt-LOJ">
             <objects>
                 <tableViewController id="kQ1-fe-oB5" customClass="CategoriesController" customModule="My_Cash" customModuleProvider="target" sceneMemberID="viewController">
@@ -322,7 +329,7 @@
                             <outlet property="delegate" destination="kQ1-fe-oB5" id="Ztf-0F-9WZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Категория" id="wJD-ze-6ZE"/>
+                    <navigationItem key="navigationItem" title="Category" id="wJD-ze-6ZE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pKP-5q-WV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
